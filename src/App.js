@@ -27,6 +27,7 @@ function App() {
     <div>
       {foodILike.map(dish => (
         <Food name={dish.name} image={dish.image} />
+        // 프로퍼티의 이름을 그대로 컴포넌트에 보낼 수 있다.
       ))}
     </div>
   );
