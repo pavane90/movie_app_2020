@@ -5,8 +5,7 @@ const foodILike = [
     id: 1,
     name: "kimchi",
     image:
-      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FeTucCw1w6Ak%2Fmaxresdefault.jpg&f=1&nofb=1",
-    rating: 5
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FeTucCw1w6Ak%2Fmaxresdefault.jpg&f=1&nofb=1"
   },
   {
     id: 2,
@@ -26,6 +25,12 @@ function Food({ name, image, rating }) {
     </div>
   );
 }
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  rating: PropTypes.number
+};
 
 function App() {
   return (
