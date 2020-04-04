@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 
 class App extends React.Component {
   state = {
-    count: 0
+    count: 0,
   };
   add = () => {
+    // this를 사용할 것
     this.setState({ count: 1 });
     console.log("add");
   };
