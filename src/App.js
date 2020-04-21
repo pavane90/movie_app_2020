@@ -8,11 +8,11 @@ class App extends React.Component {
   add = () => {
     // this를 사용할 것
     // 값을 바꿀때는 setState를 사용할것
-    this.setState({ count: this.state.count + 1 });
+    this.setState((current) => ({ count: current.count + 1 }));
     console.log("add");
   };
   minus = () => {
-    this.setState({ count: this.state.count - 1 });
+    this.setState((current) => ({ count: current.count - 1 }));
     console.log("minus");
   };
   render() {
